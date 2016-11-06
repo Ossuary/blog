@@ -1,0 +1,78 @@
+// Buttons
+.form-control
+	outline:
+		width: 0 !important
+		color: transparent
+	border:
+		radius: 0 !important
+		width: 1px
+		style: solid
+
+	&:focus,
+	&:active,
+	&:hover
+		box-shadow: none
+		outline: 0
+
+.btn-1,
+.btn-2,
+.btn-3
+	background:
+		color: transparent
+	text:
+		transform: uppercase
+
+	border:
+		radius: 0
+		color: $primary-color
+
+	padding: 20px 40px
+	margin-bottom: 0
+
+	transition: all 100ms linear
+
+	&:hover,
+	&:active,
+	&:focus
+		color: white
+		box-shadow: none
+		outline:
+			width: 0 !important
+			color: transparent !important
+
+.btn-1
+	color: white
+
+	&:hover,
+	&:active,
+	&:focus
+		background:
+			color: $primary-color
+
+.btn-2
+	color: $third-color
+
+	&:hover,
+	&:active,
+	&:focus
+		background:
+			color: $third-color
+		border:
+			color: $third-color
+
+.btn-3
+	@extend .btn-2
+	color: white
+
+.btn-4
+	@extend .btn-2
+	color: white
+	border:
+		color: white
+
+
+.scroll-down-icon
+	position: absolute
+	bottom: 50px
+	left: 50%
+	transform: translate(-50%, 0)

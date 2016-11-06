@@ -1,0 +1,34 @@
+@import'typography'
+
+.parallax-window
+	min-height: 400px
+	background: transparent
+
+.header
+	display: flex
+	justify-content: center
+	align-items: center
+	min-height: 100vh
+	background: transparent
+	text:
+		align: center
+	padding: 0 15px
+
+
+	.header-title
+		@include bolder(150px)
+		margin-top: 75px
+		text-transform: uppercase
+
+		@media screen and (max-width: 768px)
+			@include bolder(58px)
+
+	.header-sub-title
+		@include light-italic(18px)
+		line-height: 2
+
+		@media screen and (max-width: 768px)
+			@include light-italic(16px)
+
+	.header-button
+		margin-top: 40px

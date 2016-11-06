@@ -1,0 +1,96 @@
+//	Typography
+h1, h2, h3, h4, h5, h6
+	margin: 0
+
+
+p
+	margin: 0 0 20px 0
+
+em
+	font-style: italic
+
+strong
+	font-weight: bold
+
+hr
+	border: solid #ddd
+	border-width: 1px 0 0
+	clear: both
+	margin: 0
+	height: 0
+
+// Links
+
+a
+	color: $link-color
+	text-decoration: none
+	outline: 0
+
+a:hover, a:focus
+	color: lighten($link-color, 20%)
+	text-decoration: none !important
+
+// Selection colors (easy to forget)
+
+::selection
+	background: $selection-color
+
+::-moz-selection
+	background: $selection-color
+
+img::selection
+	background: transparent
+
+img::-moz-selection
+	background: transparent
+
+body
+	-webkit-tap-highlight-color: $selection-color
+
+// Basic Styles
+figure
+	margin: 0
+
+html
+	width: 100%
+	height: 100%
+
+body
+	background: #fff
+	font-size: 14px
+	line-height: 1.6
+	font-family:  'Roboto', sans-serif
+	-webkit-font-smoothing: antialiased
+	-webkit-text-size-adjust: 100%
+	margin: 0 0 0 0
+	padding: 0
+	width: 100%
+	min-height: 100%
+	/* Disable flexbox for IExplorer compatibility */
+	//display: flex
+	//flex-direction: column
+
+.content
+	/* Disable flexbox for IExplorer compatibility */
+	//flex: 1
+
+#wrapper
+	padding-left: 0
+
+	@media screen and (min-width: 768px)
+		padding-left: 225px
+
+#page-wrapper
+	padding: 80px 10px 10px 10px
+
+.no-gutters
+	margin-right: 0
+	margin-left: 0
+	padding-right: 0
+	padding-left: 0
+
+	& > [class^="col-"],
+	& > [class*=" col-"]
+		padding-right: 0
+		padding-left: 0
+

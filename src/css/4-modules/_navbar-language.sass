@@ -1,0 +1,63 @@
+.language-open
+	right: 0
+	@media screen and (max-width: 768px)
+		width: 100%
+
+.language-closed
+	right: -300px
+	@media screen and (max-width: 768px)
+		right: -100%
+
+#navbar-language
+	background:
+		color: $third-color
+	border:
+		width: 20px
+		style: solid
+		color: $primary-color
+	width: 300px
+	height: 100%
+	position: fixed
+	transition: all 50ms linear
+	z-index: 9999
+
+	@media screen and (max-width: 768px)
+		width: 100%
+
+	#close-navbar-language-button
+		position: absolute
+		right: 0
+		padding: 20px
+
+		a
+			color: $primary-color
+
+	.navigation
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 20px
+
+	#language-dropdown
+		color: white
+		list-style: none
+
+		#language-header
+
+			text:
+				transform: uppercase
+			font:
+				weight: 800
+			margin:
+				bottom: 20px
+		a
+			li
+				padding: 15px 0
+				color: white
+				font:
+					size: 28px
+				i
+					color: $primary-color
+					size: 16px

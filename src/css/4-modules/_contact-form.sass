@@ -1,0 +1,60 @@
+.contact-form-section
+	background:
+		color: $third-color
+	padding: 50px 15px
+	text:
+		align: center
+
+	h1
+		font:
+			size: 48px
+			weight: 900
+		color: white
+		text:
+			transform: uppercase
+
+		@media screen and (max-width: 768px)
+			font:
+				size: 38px
+
+	h4
+		color: white
+		font:
+			size: 18px
+			weight: 300
+			style: italic
+
+	p
+		border-bottom: 1px solid $primary-color
+		width: 75px
+		margin: 20px auto
+
+	.contact-form
+		margin-top: 50px
+
+		label
+			width: 0
+			height: 0
+			display: block
+
+		#name,
+		#email,
+		#message
+			background:
+				color: transparent
+			border:
+				color: white
+				radius: 0
+			font:
+				weight: 300
+			max-width: 100%
+			margin-bottom: 20px
+
+			&:focus,
+			&:active
+				border:
+					color: $primary-color
+				color: #fff
+
+			&::-webkit-input-placeholder
+				color: $medium-gray

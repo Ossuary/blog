@@ -1,0 +1,71 @@
+.open
+	left: 0
+
+	@media screen and (max-width: 768px)
+		width: 100%
+
+.closed
+	left: -300px
+	@media screen and (max-width: 768px)
+		left: -100%
+
+.nav-background
+	position: fixed
+	width: 100%
+	height: 100%
+	background:
+		color: transparentize($third-color, .3)
+
+#navbar-menu
+	background:
+		color: $primary-color
+	border:
+		width: 20px
+		style: solid
+		color: $third-color
+	width: 300px
+	height: 100%
+	position: fixed
+	transition: all 50ms linear
+	z-index: 9998
+
+	@media screen and (max-width: 768px)
+		width: 100%
+
+	#close-navbar-menu-button
+		//color: white
+
+	.navigation
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+
+	#nav-menu-items
+		font:
+			size: 28px
+		text:
+			transform: uppercase
+			align: center
+		padding: 0
+
+
+		li
+			list-style: none
+
+		a
+			color: $third-color
+			padding: 15px 40px
+			font:
+				weight: 800
+				size: 28px
+			transition: all 100ms linear
+
+			&:hover
+				color: white
+				border:
+					width: 1px
+					style: solid
+					color: white
+					radius: 0
